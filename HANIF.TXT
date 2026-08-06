@@ -2,3 +2,217 @@ C:\Users\NamaPengguna>hostname   REM Ini perintah yang diketik, 'hostname'
 NAMA-KOMPUTER-WINDOWS            REM Ini output dari perintah 'hostname'
 C:\Users\NamaPengguna>cd Desktop REM Perintah baru
 C:\Users\NamaPengguna\Desktop>_  REM Prompt berubah nunjukin direktori baru, siap lagi
+
+
+
+ Volume in drive C has no label.
+ Volume Serial Number is CED3-A343
+
+ Directory of C:\Users\T 4 6 0
+
+06/08/2026  20:57    <DIR>          .
+31/05/2025  07:50    <DIR>          ..
+24/08/2025  17:17               298 .bash_history
+06/05/2026  21:18    <DIR>          .codeium
+06/05/2026  21:28    <DIR>          .codex
+30/07/2026  21:17    <DIR>          .copilot
+24/08/2025  17:03                51 .gitconfig
+24/08/2025  17:04                20 .lesshst
+29/07/2025  20:48    <DIR>          .vscode
+02/05/2026  20:25    <DIR>          .vscode-shared
+31/05/2025  07:33    <DIR>          Contacts
+04/09/2025  19:28    <DIR>          Documents
+18/07/2026  13:50    <DIR>          Downloads
+31/05/2025  07:33    <DIR>          Favorites
+31/05/2025  07:33    <DIR>          Links
+31/05/2025  07:33    <DIR>          Music
+13/07/2026  09:24    <DIR>          OneDrive
+31/05/2025  07:33    <DIR>          Saved Games
+17/06/2025  17:32    <DIR>          Searches
+18/12/2025  08:10    <DIR>          Videos
+               3 File(s)            369 bytes
+              17 Dir(s)  29.533.614.080 bytes free
+
+C:\Users\T 4 6 0>
+
+
+C:\Users\T 4 6 0>RMDIR PROYEKCODING
+
+C:\Users\T 4 6 0>DIR
+ Volume in drive C has no label.
+ Volume Serial Number is CED3-A343
+
+ Directory of C:\Users\T 4 6 0
+
+06/08/2026  20:57    <DIR>          .
+31/05/2025  07:50    <DIR>          ..
+24/08/2025  17:17               298 .bash_history
+06/05/2026  21:18    <DIR>          .codeium
+06/05/2026  21:28    <DIR>          .codex
+30/07/2026  21:17    <DIR>          .copilot
+24/08/2025  17:03                51 .gitconfig
+24/08/2025  17:04                20 .lesshst
+29/07/2025  20:48    <DIR>          .vscode
+02/05/2026  20:25    <DIR>          .vscode-shared
+31/05/2025  07:33    <DIR>          Contacts
+04/09/2025  19:28    <DIR>          Documents
+18/07/2026  13:50    <DIR>          Downloads
+31/05/2025  07:33    <DIR>          Favorites
+31/05/2025  07:33    <DIR>          Links
+31/05/2025  07:33    <DIR>          Music
+13/07/2026  09:24    <DIR>          OneDrive
+31/05/2025  07:33    <DIR>          Saved Games
+17/06/2025  17:32    <DIR>          Searches
+18/12/2025  08:10    <DIR>          Videos
+               3 File(s)            369 bytes
+              17 Dir(s)  29.533.614.080 bytes free
+
+C:\Users\T 4 6 0>TYPE NUL HTML
+The system cannot find the file specified.
+Error occurred while processing: HTML.
+
+C:\Users\T 4 6 0>type nul index.html
+The system cannot find the file specified.
+Error occurred while processing: index.html.
+
+C:\Users\T 4 6 0>type nul >html
+
+C:\Users\T 4 6 0>dir
+ Volume in drive C has no label.
+ Volume Serial Number is CED3-A343
+
+ Directory of C:\Users\T 4 6 0
+
+06/08/2026  21:07    <DIR>          .
+31/05/2025  07:50    <DIR>          ..
+24/08/2025  17:17               298 .bash_history
+06/05/2026  21:18    <DIR>          .codeium
+06/05/2026  21:28    <DIR>          .codex
+30/07/2026  21:17    <DIR>          .copilot
+24/08/2025  17:03                51 .gitconfig
+24/08/2025  17:04                20 .lesshst
+29/07/2025  20:48    <DIR>          .vscode
+02/05/2026  20:25    <DIR>          .vscode-shared
+31/05/2025  07:33    <DIR>          Contacts
+04/09/2025  19:28    <DIR>          Documents
+18/07/2026  13:50    <DIR>          Downloads
+31/05/2025  07:33    <DIR>          Favorites
+06/08/2026  21:07                 0 html
+31/05/2025  07:33    <DIR>          Links
+31/05/2025  07:33    <DIR>          Music
+13/07/2026  09:24    <DIR>          OneDrive
+31/05/2025  07:33    <DIR>          Saved Games
+17/06/2025  17:32    <DIR>          Searches
+18/12/2025  08:10    <DIR>          Videos
+               4 File(s)            369 bytes
+              17 Dir(s)  29.532.942.336 bytes free
+
+C:\Users\T 4 6 0>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\T 4 6 0>cd html
+The directory name is invalid.
+
+C:\Users\T 4 6 0>cd html
+The directory name is invalid.
+
+C:\Users\T 4 6 0>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\T 4 6 0>dir
+ Volume in drive C has no label.
+ Volume Serial Number is CED3-A343
+
+ Directory of C:\Users\T 4 6 0
+
+06/08/2026  21:07    <DIR>          .
+31/05/2025  07:50    <DIR>          ..
+24/08/2025  17:17               298 .bash_history
+06/05/2026  21:18    <DIR>          .codeium
+06/05/2026  21:28    <DIR>          .codex
+30/07/2026  21:17    <DIR>          .copilot
+24/08/2025  17:03                51 .gitconfig
+24/08/2025  17:04                20 .lesshst
+29/07/2025  20:48    <DIR>          .vscode
+02/05/2026  20:25    <DIR>          .vscode-shared
+31/05/2025  07:33    <DIR>          Contacts
+04/09/2025  19:28    <DIR>          Documents
+18/07/2026  13:50    <DIR>          Downloads
+31/05/2025  07:33    <DIR>          Favorites
+06/08/2026  21:07                 0 html
+31/05/2025  07:33    <DIR>          Links
+31/05/2025  07:33    <DIR>          Music
+13/07/2026  09:24    <DIR>          OneDrive
+31/05/2025  07:33    <DIR>          Saved Games
+17/06/2025  17:32    <DIR>          Searches
+18/12/2025  08:10    <DIR>          Videos
+               4 File(s)            369 bytes
+              17 Dir(s)  29.475.676.160 bytes free
+
+C:\Users\T 4 6 0>rmdir html
+The directory name is invalid.
+
+C:\Users\T 4 6 0>dir
+ Volume in drive C has no label.
+ Volume Serial Number is CED3-A343
+
+ Directory of C:\Users\T 4 6 0
+
+06/08/2026  21:07    <DIR>          .
+31/05/2025  07:50    <DIR>          ..
+24/08/2025  17:17               298 .bash_history
+06/05/2026  21:18    <DIR>          .codeium
+06/05/2026  21:28    <DIR>          .codex
+30/07/2026  21:17    <DIR>          .copilot
+24/08/2025  17:03                51 .gitconfig
+24/08/2025  17:04                20 .lesshst
+29/07/2025  20:48    <DIR>          .vscode
+02/05/2026  20:25    <DIR>          .vscode-shared
+31/05/2025  07:33    <DIR>          Contacts
+04/09/2025  19:28    <DIR>          Documents
+18/07/2026  13:50    <DIR>          Downloads
+31/05/2025  07:33    <DIR>          Favorites
+06/08/2026  21:07                 0 html
+31/05/2025  07:33    <DIR>          Links
+31/05/2025  07:33    <DIR>          Music
+13/07/2026  09:24    <DIR>          OneDrive
+31/05/2025  07:33    <DIR>          Saved Games
+17/06/2025  17:32    <DIR>          Searches
+18/12/2025  08:10    <DIR>          Videos
+               4 File(s)            369 bytes
+              17 Dir(s)  29.429.170.176 bytes free
+
+C:\Users\T 4 6 0>del html
+
+C:\Users\T 4 6 0>dir
+ Volume in drive C has no label.
+ Volume Serial Number is CED3-A343
+
+ Directory of C:\Users\T 4 6 0
+
+06/08/2026  21:11    <DIR>          .
+31/05/2025  07:50    <DIR>          ..
+24/08/2025  17:17               298 .bash_history
+06/05/2026  21:18    <DIR>          .codeium
+06/05/2026  21:28    <DIR>          .codex
+30/07/2026  21:17    <DIR>          .copilot
+24/08/2025  17:03                51 .gitconfig
+24/08/2025  17:04                20 .lesshst
+29/07/2025  20:48    <DIR>          .vscode
+02/05/2026  20:25    <DIR>          .vscode-shared
+31/05/2025  07:33    <DIR>          Contacts
+04/09/2025  19:28    <DIR>          Documents
+18/07/2026  13:50    <DIR>          Downloads
+31/05/2025  07:33    <DIR>          Favorites
+31/05/2025  07:33    <DIR>          Links
+31/05/2025  07:33    <DIR>          Music
+13/07/2026  09:24    <DIR>          OneDrive
+31/05/2025  07:33    <DIR>          Saved Games
+17/06/2025  17:32    <DIR>          Searches
+18/12/2025  08:10    <DIR>          Videos
+               3 File(s)            369 bytes
+              17 Dir(s)  29.420.265.472 bytes free
+
+C:\Users\T 4 6 0>
