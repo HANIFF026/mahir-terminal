@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voting App - Best Motorcycle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-wrapper">
+    <!-- Header Atas -->
+    <header class="top-header">
+      <h1>Mini Voting App</h1>
+      <div class="top-actions">
+        <button id="btn-reset" class="btn-action">🔄 Reset</button>
+        <button id="btn-fullscreen" class="btn-action">⛶ Fullscreen</button>
+      </div>
+    </header>
+
+    <!-- Card Utama Dashboard -->
+    <main class="main-card">
+      <div class="card-header">
+        <div class="header-left">
+          <span class="badge-live">● LIVE POLL</span>
+          <h2>THE BEST MOTORCYCLE? 🚀</h2>
+          <p class="desc">TUGAS HSI PURWOREJO VOTING APP — Pilih motor impianmu!</p>
+        </div>
+        <div class="total-box">
+          <span class="total-label">Total Votes</span>
+          <span id="total-votes" class="total-number">0</span>
+        </div>
+      </div>
+
+      <!-- Grid Candidate Cards -->
+      <div class="cards-grid">
+        <!-- Candidate 1 -->
+        <div class="candidate-card">
+          <div class="icon-box">🏍️</div>
+          <h3>KAWASAKI H2R</h3>
+          <p class="card-desc">Supercharged hypersport monster dengan kecepatan ekstrem.</p>
+          <div class="stats-info">
+            <span><strong id="votes-h2r">0</strong> vote</span>
+            <span id="percent-h2r">0%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div id="bar-h2r" class="progress-bar-fill" style="width: 0%;"></div>
+          </div>
+          <button id="btn-h2r" class="btn-vote">Vote 🏍️</button>
+        </div>
+
+        <!-- Candidate 2 -->
+        <div class="candidate-card">
+          <div class="icon-box">🏁</div>
+          <h3>YAMAHA R1</h3>
+          <p class="card-desc">Mesin Crossplane CP4 dengan raungan khas MotoGP.</p>
+          <div class="stats-info">
+            <span><strong id="votes-r1">0</strong> vote</span>
+            <span id="percent-r1">0%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div id="bar-r1" class="progress-bar-fill" style="width: 0%;"></div>
+          </div>
+          <button id="btn-r1" class="btn-vote">Vote 🏁</button>
+        </div>
+
+        <!-- Candidate 3 -->
+        <div class="candidate-card">
+          <div class="icon-box">🔥</div>
+          <h3>HONDA CBR1000RR</h3>
+          <p class="card-desc">Fireblade legendaris dengan kontrol presisi tinggi.</p>
+          <div class="stats-info">
+            <span><strong id="votes-cbr">0</strong> vote</span>
+            <span id="percent-cbr">0%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div id="bar-cbr" class="progress-bar-fill" style="width: 0%;"></div>
+          </div>
+          <button id="btn-cbr" class="btn-vote">Vote 🔥</button>
+        </div>
+
+        <!-- Candidate 4 -->
+        <div class="candidate-card">
+          <div class="icon-box">🇮🇹</div>
+          <h3>DUCATI Panigale V4</h3>
+          <p class="card-desc">Karya seni Italia dengan performa mesin Desmosedici Stradale.</p>
+          <div class="stats-info">
+            <span><strong id="votes-duke">0</strong> vote</span>
+            <span id="percent-duke">0%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div id="bar-duke" class="progress-bar-fill" style="width: 0%;"></div>
+          </div>
+          <button id="btn-duke" class="btn-vote">Vote 🇮🇹</button>
+        </div>
+
+        <!-- Candidate 5 -->
+        <div class="candidate-card">
+          <div class="icon-box">🇩🇪</div>
+          <h3>BMW S1000RR</h3>
+          <p class="card-desc">Superbike Jerman dengan teknologi canggih.</p>
+          <div class="stats-info">
+            <span><strong id="votes-bmw">0</strong> vote</span>
+            <span id="percent-bmw">0%</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div id="bar-bmw" class="progress-bar-fill" style="width: 0%;"></div>
+          </div>
+          <button id="btn-bmw" class="btn-vote">Vote 🇩🇪</button>
+        </div>
+      </div>
+
+      <!-- Current Leader Box -->
+      <div class="leader-box">
+        <div class="leader-info">
+          <span class="leader-tag">🏆 CURRENT LEADER</span>
+          <h3 id="leader-name">Belum Ada Pemenang</h3>
+          <p id="leader-status" class="leader-desc">Belum ada vote yang masuk</p>
+        </div>
+        <div class="trophy-icon">🏆</div>
+      </div>
+
+      <!-- Feedback Banner -->
+      <div id="feedback" class="feedback-banner">
+        <span>Pilih salah satu motorcycle di atas!</span>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

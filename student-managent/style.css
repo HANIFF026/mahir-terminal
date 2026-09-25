@@ -1,0 +1,352 @@
+/* --- Global Reset & Design Tokens --- */
+:root {
+  --bg-color: #f2f3f8;
+  --card-bg: #ffffff;
+  --text-primary: #121217;
+  --text-secondary: #6e6e77;
+  --accent-color: #0066ff;
+  --accent-hover: #0052cc;
+  --danger-color: #ff3b30;
+  --danger-light: #ffeaea;
+  --success-bg: #e2f7e5;
+  --success-text: #146c2e;
+  
+  --radius-card: 24px;
+  --radius-input: 14px;
+  --radius-btn: 16px;
+  --shadow-card: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Reset Tampilan Bawaan Browser */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Header */
+.page-item {
+  max-width: 900px;
+  width: 100%;
+}
+
+.card-header {
+  background: var(--card-bg);
+  border-radius: var(--radius-card);
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.school {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+.card-header h1 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-top: 4px;
+}
+
+.phase-badge {
+  background-color: #e8f0ff;
+  color: var(--accent-color);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 16px;
+  text-align: right;
+  line-height: 1.3;
+}
+
+/* Layout Grid */
+.app-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .app-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Kartu / Container */
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius-card);
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* Pesan Alert Notifikasi */
+.alert {
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  background-color: var(--success-bg);
+  color: var(--success-text);
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Form Input */
+#studentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-left: 4px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: var(--radius-input);
+  border: 1.5px solid transparent;
+  background-color: #f4f4f8;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--accent-color);
+  background-color: #ffffff;
+}
+
+/* Tombol */
+button {
+  padding: 14px 20px;
+  border-radius: var(--radius-btn);
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.secondary-btn {
+  background-color: #e9e9ee;
+  color: var(--text-primary);
+  margin-top: 4px;
+}
+
+/* Student List */
+.student-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 320px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.student-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7fc;
+  padding: 12px 16px;
+  border-radius: 16px;
+  border: 1px solid #eeeeef;
+}
+
+.student-info strong {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.student-info span {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.student-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-edit, .btn-delete {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.btn-edit {
+  background-color: #e8f0ff;
+  color: var(--accent-color);
+}
+
+.btn-delete {
+  background-color: var(--danger-light);
+  color: var(--danger-color);
+}
+
+/* Ringkasan Statistik */
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  border-top: 1px solid #eeeeef;
+  padding-top: 16px;
+}
+
+.stat-box {
+  background: #f7f7fc;
+  padding: 12px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.stat-box span {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.stat-box strong {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}
+
+/* --- FIX: Custom Modal Popup Instan & Ringan --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+
+  /* Default tersembunyi total */
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay.active {
+  /* Muncul seketika tanpa transisi GPU */
+  display: flex !important;
+}
+
+.modal-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 24px;
+  width: 90%;
+  max-width: 340px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.modal-card h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.modal-card p {
+  font-size: 0.9rem;
+  color: #6e6e77;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-actions button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 16px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.danger-btn {
+  background-color: #ff3b30;
+  color: white;
+}
+
+/* Custom Modal - Ringan untuk Dual-Core / Integrated Graphics */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: none; /* Dikontrol via JS */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+}
+
+.modal-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 340px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(10px);
+  transition: transform 0.2s ease;
+}
+
+.modal-overlay.active .modal-card {
+  transform: translateY(0);
+}

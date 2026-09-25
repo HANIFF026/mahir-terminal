@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management - HSI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="page-item card-header">
+    <div>
+      <span class="school">HSI BOARDING SCHOOL</span>
+      <h1>TUGAS MANAGEMENT SISWA</h1>
+    </div>
+    <div class="phase-badge">Phase 4<br>Dynamic UI + Storage</div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main class="app-grid">
+    <!-- Section Form (Tambah / Edit) -->
+    <section class="card">
+      <h2 id="formTitle">➕ Tambah Siswa</h2>
+      
+      <!-- Tempat Pesan Sukses / Alert -->
+      <div id="alertMessage" class="alert hidden"></div>
+
+      <form id="studentForm">
+        <!-- Input tersembunyi untuk penanda data yang sedang diedit -->
+        <input type="hidden" id="editIndex" value="">
+
+        <label for="studentName">Nama Siswa</label>
+        <input id="studentName" type="text" placeholder="Contoh: Ahmad" autocomplete="off" required>
+
+        <label for="studentScore">Nilai</label>
+        <input id="studentScore" type="number" min="0" max="100" placeholder="0 - 100" required>
+
+        <button id="btnSubmit" class="primary-btn" type="submit">➕ Tambah Siswa</button>
+        <button id="btnCancel" class="secondary-btn hidden" type="button">Batal Edit</button>
+      </form>
+      
+      <p class="form-note">💡 Data disimpan otomatis ke LocalStorage browser.</p>
+    </section>
+
+    <!-- Section Daftar Siswa & Statistik -->
+    <section class="card">
+      <div class="list-header">
+        <h2>📋 Daftar Siswa</h2>
+        <span class="saved-status">💾 LocalStorage</span>
+      </div>
+
+      <div id="studentList" class="student-list"></div>
+
+      <div class="stats">
+        <div class="stat-box">
+          <span>Total Siswa</span>
+          <strong id="totalStudents">0</strong>
+        </div>
+        <div class="stat-box">
+          <span>Rata-rata Nilai</span>
+          <strong id="averageScore">0</strong>
+        </div>
+      </div>
+    </section>   
+  </main>
+
+  <!-- Modal Konfirmasi Custom (Ditaruh di luar <main> agar melayang sempurna) -->
+  <div id="customModal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="modal-icon">⚠️</div>
+      <h3>Hapus Data Siswa</h3>
+      <p id="modalMessage">Apakah kamu yakin ingin menghapus data ini?</p>
+      <div class="modal-actions">
+        <button id="btnCancelDelete" class="secondary-btn">Batal</button>
+        <button id="btnConfirmDelete" class="danger-btn">Hapus</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pemanggilan File JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
